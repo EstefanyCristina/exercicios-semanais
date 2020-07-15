@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exercício 08-07-20</title>
+</head>
+<body>
+    
+
+    <script>
+
+        alert('Bem-vindo a minha tabuada dinâmica!')
+        var nome = prompt('Digite seu nome: ')
+        alert('Ok, irei chamar você de ' + nome)
+        const pularlinha = '<br>'
+        var numero1 = parseInt(prompt(nome + ', digite o número que você gostaria de multiplicar: '))
+        alert('Você digitou o número ' + numero1)
+        var numero2 = parseInt(prompt("Digite o número de vezes que gostaria de multiplicar: "))
+        alert('Você escolheu multiplicar por ' + numero2 + ' vezes. Vamos lá!')
+
+        document.write('Seu nome é: ' + nome + pularlinha)
+        document.write('Você digitou o número ' +   numero1 + pularlinha)
+        document.write('Vamos multiplicar por ' + numero2 + ' vezes!' + pularlinha + pularlinha)
+        
+        for(var i = 0; i < numero2; i++)
+
+        if((numero1*i) %2 == 0){
+            document.write(numero1 + 'x' + i + '=' + numero1*i + ' par' + pularlinha)
+        } else {
+            document.write(numero1 + 'x' + i + '=' + numero1*i + ' impar' + pularlinha)
+        }
+
+        
+    </script>
+</body>
+</html>

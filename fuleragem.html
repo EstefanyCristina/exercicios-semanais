@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+    <form>
+    <label for = "email"> E-mail </label>
+    <input id = "email" type = "email" placeholder = "exemplo@exemplo.com" required><br>
+
+    <label for = "senha"> Senha </label>
+    <input id = "senha" type = "password" placeholder = "*****" required><br><br>
+
+    <label for = "lembrar"> lembre-me </label>
+    <input id = "lembrar" type = "checkbox" placeholder = "elembre-me" required><br><br>
+
+    <button type = "submit" onclick= login() > Entrar </button>
+    <button type ="reset"> Limpar </button><br><br><br>
+
+
+    <script>
+        var email = document.getElementById('email')
+        var senha = document.getElementById('senha')
+
+        function login (){
+            if(verificarAcesso(true)){
+                alert('Bem-vindo ao nosso sistema!')
+            }else {
+                alert("Usuário e Senha inválidos")
+            }
+            
+        }
+        function verificarAcesso(email, senha){
+            if (email.toLowerCase() == "estefany@serratec.com" && senha == "123"){
+                return true
+            }   return false
+
+        }
+
+    </script>
+
+    </form>
+</body>
+</html>
